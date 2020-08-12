@@ -41,7 +41,8 @@ RUN wget -q -O unifi-video.deb https://dl.ubnt.com/firmwares/ufv/v${version}/uni
   patch -lN /usr/sbin/unifi-video /unifi-video.patch && \
   rm /unifi-video.deb && \
   rm /unifi-video.patch && \
-  chmod 755 /run.sh
+  chmod 755 /run.sh && \
+  chmod 755 /usr/sbin/unifi-video
 
 # RTMP, RTMPS & RTSP, Inbound Camera Streams & Camera Management (NVR Side), UVC-Micro Talkback (Camera Side)
 # HTTP & HTTPS Web UI + API, Video over HTTP & HTTPS
